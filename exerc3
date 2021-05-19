@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio_3
+{
+	class Program_3
+	{
+		static void Main(string[] args)
+		{
+			Random nAlet = new Random();
+
+			int n1 = nAlet.Next(1, 100);
+			int n2 = nAlet.Next(1, 100);
+			int n3 = nAlet.Next(1, 100);
+			int n4 = nAlet.Next(1, 100);
+			int n5 = nAlet.Next(1, 100);
+
+			int[] conjunto = { n1, n2, n3, n4, n5 };
+
+			Console.WriteLine("Os valores são  \n{0}\n{1}\n{2}\n{3}\n{4}\n", n1, n2, n3, n4, n5);
+
+			var valorAlto = conjunto.Max();
+			Console.WriteLine("O valor mais alto é {0}", valorAlto);
+
+			Console.ReadLine();
+		}
+	}
+}
