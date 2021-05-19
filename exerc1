@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio_1
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			Random nAlet = new Random();
+
+			int n1 = nAlet.Next(1, 100);
+			int n2 = nAlet.Next(1, 100);
+
+			Console.WriteLine("o valor da soma é: {0}" , n1+n2);
+
+		}
+	}
+}
