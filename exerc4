@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio_3
+{
+	class Program_3
+	{
+		static void Main(string[] args)
+		{
+			Console.WriteLine("Em quem ano você nasceu? ");
+			int ano = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Qual o mês em que você nasceu? ");
+			int mes = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Qual dia você nasceu? ");
+			int dia = Convert.ToInt32(Console.ReadLine());
+
+			// Infomações do levantadas
+			// começando cálculo
+			
+
+			
+
+
+		}
+	}
+}
