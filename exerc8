@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Exercicio_3
+{
+    internal class Program_3Base
+    {
+        static void Main(string[] args)
+        {
+            Random nAlet = new Random();
+
+            int n1 = nAlet.Next(0, 100);
+            int n2 = nAlet.Next(0, 100);
+
+            Console.WriteLine("O maior divisor comum de " + n1 + " e " + n2 + " é " + MDC(n1, n2));
+
+        }
+        public static int MDC(int a, int b)
+        {
+            int r;
+
+            while (b != 0)
+            {
+                r = a % b;
+                a = b;
+                b = r;
+            }
+
+            return a;
+        }
+    }
+}
